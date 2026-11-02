@@ -1,4 +1,4 @@
-# The Hitchhiker's Guide to the Tokenverse
+# The Hitchhiker's Guide to Tokens
 
 > "Time is an illusion. Lunchtime doubly so."
 >
@@ -112,12 +112,10 @@ ruff format --check .
 The tests never touch the network. They use a tokenizer trained in memory and
 mock the Hugging Face downloads.
 
-## A few caveats
+## Notes
 
 - `ToyBPE` works on characters, not bytes, so it isn't GPT-2's tokenizer. It's
   there to make the merges visible.
-- The digit-grouping code shows what the representations look like. It doesn't
-  retrain anything or measure arithmetic accuracy.
 - The boundary check looks at token offsets only. It doesn't compute model
   probabilities, and ByteSampler is explained in the notebooks but not
   implemented.
