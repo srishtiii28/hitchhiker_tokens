@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tokenverse"
+version = "0.1.0"
+description = "Companion code for The Hitchhiker's Guide to the Tokenverse: tokenisation, numbers, token boundaries, image patches and the ViT [CLS] token."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Srishti Dutta" }]
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+nlp = [
+    "transformers>=4.40",
+    "tokenizers>=0.19",
+    "sentencepiece>=0.2",
+]
+notebooks = [
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+    "ipywidgets>=8.0",
+]
+vision = [
+    "torch>=2.2",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+    "nbformat>=5.9",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"notebooks/*.ipynb" = ["E402", "E501", "F704", "B018"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
