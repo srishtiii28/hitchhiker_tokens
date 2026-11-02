@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tokenverse"
 version = "0.1.0"
-description = "Companion code for The Hitchhiker's Guide to the Tokenverse: tokenisation, numbers, token boundaries, image patches and the ViT [CLS] token."
+description = "Companion code for The Hitchhiker's Guide to Tokens: tokenisation, numbers, token boundaries, image patches and the ViT [CLS] token."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }

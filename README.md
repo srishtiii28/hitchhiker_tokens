@@ -4,8 +4,8 @@
 >
 > Douglas Adams, *The Hitchhiker's Guide to the Galaxy*
 
-This is the code that goes with my article *The Hitchhiker's Guide to the
-Tokenverse*, a journey through tokenisation, numbers, image patches and the
+This is the code that goes with my article *The Hitchhiker's Guide to
+Tokens*, a journey through tokenisation, numbers, image patches and the
 little `[CLS]` token. The article explains the ideas. This repository lets you
 poke at them.
 

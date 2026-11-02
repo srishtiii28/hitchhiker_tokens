@@ -1,4 +1,4 @@
-"""The Hitchhiker's Guide to the Tokenverse.
+"""The Hitchhiker's Guide to Tokens.
 
 Companion code for the article of the same name: tokenisation, numbers,
 token boundaries, image patches and the Vision Transformer ``[CLS]`` token.
